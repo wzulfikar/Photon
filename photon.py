@@ -459,8 +459,8 @@ time_per_request = time_taken[2]
 
 # create writer function
 def writer(file, lines):
-    with open(file, 'w+', encoding='utf8') as f:
-        f.write(str('\n'.join(lines)))
+    with open(file, 'w+') as f:
+        f.write('\n'.join(lines))
 
 # Step 4. Save the results
 if args.dns:
